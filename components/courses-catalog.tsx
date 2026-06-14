@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import Link from 'next/link'
-import { BookOpen, Clock, Users, ArrowRight, Globe, PenTool, Code2, Compass, Server, Cpu, Smartphone } from 'lucide-react'
+import { BookOpen, Clock, Users, ArrowRight, Globe, PenTool, Code2, Compass, Server, Cpu, Smartphone, Video } from 'lucide-react'
 
 const allCourses = [
   {
@@ -103,6 +103,20 @@ const allCourses = [
     color: 'text-emerald-500',
     bgColor: 'bg-emerald-500/10',
     borderColor: 'hover:border-emerald-500/40',
+  },
+  {
+    id: 'video-editing',
+    title: 'Video Editing & Content Creation',
+    category: 'Production',
+    icon: Video,
+    level: 'Beginner to Professional',
+    duration: '8 Weeks',
+    students: '95+ Enrolled',
+    description: 'Master storytelling through video. Learn timeline pacing, audio engineering, custom transitions, color grading, and dynamic text effects.',
+    syllabus: ['Premiere Pro timeline pacing & cuts', 'After Effects keyframe animations', 'Color grading with cinematic LUTs', 'Sound design, mixing & EQ rules'],
+    color: 'text-amber-500',
+    bgColor: 'bg-amber-500/10',
+    borderColor: 'hover:border-amber-500/40',
   },
 ]
 

@@ -5,7 +5,7 @@ import { Services } from '@/components/services'
 import { Statistics } from '@/components/statistics'
 import { WhyChooseMe } from '@/components/why-choose-me'
 import { Courses } from '@/components/courses'
-import { Testimonials } from '@/components/testimonials'
+import { LatestBlogs } from '@/components/latest-blogs'
 import { Process } from '@/components/process'
 import { Footer } from '@/components/footer'
 
@@ -19,7 +19,7 @@ export default function Home() {
       <Statistics />
       <WhyChooseMe />
       <Courses />
-      <Testimonials />
+      <LatestBlogs />
       <Process />
       <Footer />
     </main>

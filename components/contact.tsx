@@ -198,7 +198,7 @@ export function Contact() {
           >
             {/* WhatsApp CTA */}
             <motion.a
-              href="https://wa.me/1234567890"
+              href="https://wa.me/918512889586"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
@@ -211,7 +211,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground">WhatsApp</h4>
-                  <p className="text-muted-foreground">Chat with me on WhatsApp</p>
+                  <p className="text-muted-foreground">Chat with me at +91 8512889586</p>
                 </div>
               </div>
             </motion.a>
@@ -227,7 +227,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground">Email</h4>
-                  <p className="text-muted-foreground">hello@example.com</p>
+                  <p className="text-muted-foreground">gulmohammad8512@gmail.com</p>
                 </div>
               </div>
             </motion.div>
@@ -243,7 +243,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground">Phone</h4>
-                  <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                  <p className="text-muted-foreground">+91 8512889586</p>
                 </div>
               </div>
             </motion.div>

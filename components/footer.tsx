@@ -83,8 +83,8 @@ export function Footer() {
               <ul className="space-y-2">
                 {footerLinks.Resources.map((item) => (
                   <li key={item}>
-                    <Link href="#">
-                      <span className="text-muted-foreground hover:text-primary transition-colors text-sm">
+                    <Link href={item === 'Blog' ? '/blog' : '#'}>
+                      <span className="text-muted-foreground hover:text-primary transition-colors text-sm cursor-pointer">
                         {item}
                       </span>
                     </Link>

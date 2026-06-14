@@ -50,7 +50,7 @@ export function Navbar() {
     { name: 'About', href: '/about' },
     { name: 'Services', href: '/services' },
     { name: 'Courses', href: '/courses' },
-    { name: 'Testimonials', href: isHome ? '#testimonials' : '/#testimonials' },
+    { name: 'Blog', href: '/blog' },
     { name: 'Contact', href: '/contact' },
   ]
 

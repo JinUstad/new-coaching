@@ -58,7 +58,13 @@ export function ContactInfo() {
                 </p>
 
                 {/* Stylized Visual Mock Map */}
-                <div className="relative w-full h-56 rounded-xl border border-border bg-slate-900 overflow-hidden mb-6 flex items-center justify-center">
+                <motion.a
+                  href="https://share.google/0t65AmET8QjgGfcKs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ scale: 1.01 }}
+                  className="relative w-full h-56 rounded-xl border border-border bg-slate-900 overflow-hidden mb-6 flex items-center justify-center group cursor-pointer block"
+                >
                   {/* Grid background representing map lines */}
                   <div className="absolute inset-0 opacity-15 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:16px_16px]" />
                   {/* Abstract roads lines using CSS */}
@@ -78,28 +84,40 @@ export function ContactInfo() {
 
                   {/* Coordinates Overlay */}
                   <div className="absolute bottom-3 left-3 bg-slate-950/80 backdrop-blur-md px-3 py-1.5 rounded-lg border border-white/15 text-[11px] font-mono text-white/90">
-                    LAT: 28.6139° N | LON: 77.2090° E
+                    LAT: 28.6276° N | LON: 77.2166° E
                   </div>
-                </div>
+
+                  {/* Hover Overlay */}
+                  <div className="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-[1px]">
+                    <span className="bg-primary text-white text-xs font-semibold px-4 py-2 rounded-lg shadow-lg flex items-center gap-1.5 border border-white/10">
+                      Open in Google Maps ↗
+                    </span>
+                  </div>
+                </motion.a>
 
                 {/* Details List */}
                 <div className="space-y-3">
                   <div className="flex gap-3 text-sm">
                     <MapPin className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-                    <span className="text-foreground font-medium">
-                      GM Digital Hub, Suite 402, Creative Park, Block C, Delhi, India
-                    </span>
+                    <a
+                      href="https://share.google/0t65AmET8QjgGfcKs"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-foreground font-medium hover:text-primary transition-colors cursor-pointer"
+                    >
+                      Gul Mohammad Coaching Center, Delhi, India (Click to open map)
+                    </a>
                   </div>
                   <div className="flex gap-3 text-sm">
                     <Clock className="w-4 h-4 text-secondary shrink-0 mt-0.5" />
                     <span className="text-muted-foreground">
-                      Monday – Friday: 9:00 AM – 6:00 PM (IST)
+                      Monday – Saturday: 9:00 AM – 7:00 PM (IST)
                     </span>
                   </div>
                   <div className="flex gap-3 text-sm">
                     <Globe className="w-4 h-4 text-accent shrink-0 mt-0.5" />
                     <span className="text-muted-foreground">
-                      Serving worldwide clients asynchronously
+                      Real-time interactive and hands-on coaching classes
                     </span>
                   </div>
                 </div>
@@ -116,7 +134,7 @@ export function ContactInfo() {
           >
             {/* WhatsApp CTA */}
             <motion.a
-              href="https://wa.me/1234567890"
+              href="https://wa.me/918512889586"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.03 }}
@@ -129,14 +147,14 @@ export function ContactInfo() {
                 </div>
                 <div>
                   <h4 className="font-bold text-lg text-foreground mb-0.5">Quick WhatsApp Chat</h4>
-                  <p className="text-muted-foreground text-sm">Get an instant reply within 1-2 hours.</p>
+                  <p className="text-muted-foreground text-sm">+91 8512889586 — instant response</p>
                 </div>
               </div>
             </motion.a>
 
             {/* Email Contact */}
             <motion.a
-              href="mailto:hello@example.com"
+              href="mailto:gulmohammad8512@gmail.com"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
               className="block p-6 rounded-2xl bg-background border border-border hover:border-primary/50 transition-colors group"
@@ -147,14 +165,14 @@ export function ContactInfo() {
                 </div>
                 <div>
                   <h4 className="font-bold text-lg text-foreground mb-0.5">Direct Email Desk</h4>
-                  <p className="text-muted-foreground text-sm">hello@example.com — replies within 12 hours.</p>
+                  <p className="text-muted-foreground text-sm">gulmohammad8512@gmail.com — reply within 12 hours</p>
                 </div>
               </div>
             </motion.a>
 
             {/* Call Center */}
             <motion.a
-              href="tel:+15551234567"
+              href="tel:+918512889586"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
               className="block p-6 rounded-2xl bg-background border border-border hover:border-primary/50 transition-colors group"
@@ -165,7 +183,7 @@ export function ContactInfo() {
                 </div>
                 <div>
                   <h4 className="font-bold text-lg text-foreground mb-0.5">Voice Consultation</h4>
-                  <p className="text-muted-foreground text-sm">Call us directly at +1 (555) 123-4567.</p>
+                  <p className="text-muted-foreground text-sm">Call us directly at +91 8512889586</p>
                 </div>
               </div>
             </motion.a>

@@ -3,6 +3,7 @@ import { Navbar } from '@/components/navbar'
 import { CoursesHero } from '@/components/courses-hero'
 import { CoursesCatalog } from '@/components/courses-catalog'
 import { CoursesBenefits } from '@/components/courses-benefits'
+import { CoursesSchedule } from '@/components/courses-schedule'
 import { CoursesFaq } from '@/components/courses-faq'
 import { CoursesCta } from '@/components/courses-cta'
 import { Footer } from '@/components/footer'
@@ -20,6 +21,7 @@ export default function CoursesPage() {
         <CoursesHero />
         <CoursesCatalog />
         <CoursesBenefits />
+        <CoursesSchedule />
         <CoursesFaq />
         <CoursesCta />
       </div>
