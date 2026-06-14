@@ -13,7 +13,7 @@ const faqs = [
   {
     question: 'What is the schedule format of the classes?',
     answer:
-      'We run a hybrid sprint format: pre-recorded lectures are released at the start of each week, and we hold live code/design review sessions on weekends. You also schedule 1-on-1 feedback slots with Gul Mohammad to review your personal projects.',
+      'We run a hybrid sprint format: pre-recorded lectures are released at the start of each week, and we hold live code/design review sessions on weekends. You also schedule 1-on-1 feedback slots with DevforDevs to review your personal projects.',
   },
   {
     question: 'What if I get stuck while working on my coding homework?',

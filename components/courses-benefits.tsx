@@ -13,7 +13,7 @@ const benefits = [
   {
     icon: MessageSquare,
     title: '1-on-1 Debugging Calls',
-    description: 'Get personal help resolving visual CSS layout blocks, server route issues, or figma vector rules directly from Gul Mohammad.',
+    description: 'Get personal help resolving visual CSS layout blocks, server route issues, or figma vector rules directly from DevforDevs.',
   },
   {
     icon: BookOpen,

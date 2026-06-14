@@ -86,9 +86,7 @@ export function AboutHero() {
             variants={itemVariants}
             className="text-lg sm:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed text-balance"
           >
-            GM Digital is a modern design & development collective. Led by{' '}
-            <span className="text-foreground font-semibold">Gul Mohammad</span>,
-            we blend full-stack technology, premium UI/UX, video production, and SEO strategy to build immersive products that drive results.
+            DevforDevs is a modern design & development collective. We blend full-stack technology, premium UI/UX, video production, and SEO strategy to build immersive products that drive results.
           </motion.p>
 
           {/* Interactive Badges */}

@@ -5,7 +5,7 @@ import { useInView } from 'react-intersection-observer'
 
 const teamMembers = [
   {
-    name: 'Gul Mohammad',
+    name: 'DevforDevs Founder',
     role: 'Founder & Principal Engineer',
     avatar: '/avatar_gul.png',
     bio: 'Full Stack expert with 5+ years building modern digital solutions. Specializes in Next.js, Node.js, and server architectures.',

@@ -98,7 +98,7 @@ export function PromoModal() {
                   </span>
                 </h2>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Join GM Academy for hands-on, live-sprint technical coaching, or hire our Digital Studio to design, code, and deploy premium web applications.
+                  Join DevforDevs Academy for hands-on, live-sprint technical coaching, or hire our Digital Studio to design, code, and deploy premium web applications.
                 </p>
               </div>
 

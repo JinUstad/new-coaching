@@ -6,19 +6,19 @@ import { Plus, Minus, HelpCircle } from 'lucide-react'
 
 const faqs = [
   {
-    question: 'What services does GM Digital provide?',
+    question: 'What services does DevforDevs provide?',
     answer:
       'We offer complete end-to-end digital creation. This includes full-stack web and mobile development (primarily using Next.js, React, and Node.js), UI/UX system design in Figma, digital marketing & SEO audit strategy, and professional video editing/motion graphics for brands and social channels.',
   },
   {
     question: 'Who will be working on my project?',
     answer:
-      'Gul Mohammad oversees all engineering, system architecture, and quality assurance. Depending on the size, scale, and requirements of the project, selected specialists from our vetted network of creators (such as UI/UX designers, copywriters, or video editors) collaborate directly to ensure premium delivery.',
+      'The DevforDevs Team oversees all engineering, system architecture, and quality assurance. Depending on the size, scale, and requirements of the project, selected specialists from our vetted network of creators (such as UI/UX designers, copywriters, or video editors) collaborate directly to ensure premium delivery.',
   },
   {
     question: 'How do you handle project communication and updates?',
     answer:
-      'Transparency is key. We set up shared Slack/Discord channels and offer weekly demo releases on a staging URL. You will see progress step-by-step and have a direct line of communication with Gul and the team.',
+      'Transparency is key. We set up shared Slack/Discord channels and offer weekly demo releases on a staging URL. You will see progress step-by-step and have a direct line of communication with the DevforDevs team.',
   },
   {
     question: 'Do I get full ownership of the code and design files?',
@@ -92,7 +92,7 @@ export function AboutFaq() {
   const [openIndex, setOpenIndex] = useState<number | null>(null)
 
   return (
-    <section className="py-24 px-4 sm:px-6 lg:px-8 bg-card border-t border-border">
+    <section id="faq" className="py-24 px-4 sm:px-6 lg:px-8 bg-card border-t border-border">
       <div className="max-w-4xl mx-auto">
         {/* Title */}
         <div className="text-center mb-16">

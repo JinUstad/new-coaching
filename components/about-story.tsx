@@ -36,7 +36,7 @@ const storyMilestones = [
   {
     year: '2025',
     icon: Rocket,
-    title: 'GM Digital Collective',
+    title: 'DevforDevs Collective',
     description:
       'Scaled operations to build a collaborative network of designers, marketers, and developers. Delivering full-suite digital strategies globally.',
   },
@@ -137,8 +137,7 @@ export function AboutStory() {
           {/* Vertical center line (Desktop) */}
           <div className="absolute left-[50%] transform -translate-x-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-secondary to-muted-foreground/30 hidden md:block" />
 
-          {/* Vertical left line (Mobile) */}
-          <div className="absolute left-6 transform top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-secondary to-muted-foreground/30 md:hidden" />
+
 
           <div className="flex flex-col items-center">
             {storyMilestones.map((milestone, index) => (

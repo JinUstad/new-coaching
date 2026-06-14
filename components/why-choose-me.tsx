@@ -89,10 +89,10 @@ export function WhyChooseMe() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-balance">
-            Why Choose Me
+            Why Choose Us
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Discover what sets my services apart and why clients trust me with
+            Discover what sets our services apart and why clients trust us with
             their projects.
           </p>
         </motion.div>

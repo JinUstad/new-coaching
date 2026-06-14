@@ -54,7 +54,7 @@ export function ContactInfo() {
                   Our Studio Location
                 </h3>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  GM Digital operates as a hybrid studio. We host design sprints and consultation sessions at our collaborative tech workspace.
+                  DevforDevs operates as a hybrid studio. We host design sprints and consultation sessions at our collaborative tech workspace.
                 </p>
 
                 {/* Stylized Visual Mock Map */}
@@ -105,7 +105,7 @@ export function ContactInfo() {
                       rel="noopener noreferrer"
                       className="text-foreground font-medium hover:text-primary transition-colors cursor-pointer"
                     >
-                      Gul Mohammad Coaching Center, Delhi, India (Click to open map)
+                      DevforDevs Space, Delhi, India (Click to open map)
                     </a>
                   </div>
                   <div className="flex gap-3 text-sm">

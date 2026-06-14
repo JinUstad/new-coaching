@@ -43,7 +43,7 @@ export function Footer() {
               viewport={{ once: true }}
             >
               <div className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-4">
-                GM
+                DevforDevs
               </div>
               <p className="text-muted-foreground text-sm leading-relaxed">
                 Building digital experiences that drive results. Full-stack development,
@@ -62,8 +62,8 @@ export function Footer() {
               <ul className="space-y-2">
                 {footerLinks.Services.map((item) => (
                   <li key={item}>
-                    <Link href="#">
-                      <span className="text-muted-foreground hover:text-primary transition-colors text-sm">
+                    <Link href="/services">
+                      <span className="text-muted-foreground hover:text-primary transition-colors text-sm cursor-pointer">
                         {item}
                       </span>
                     </Link>
@@ -83,7 +83,7 @@ export function Footer() {
               <ul className="space-y-2">
                 {footerLinks.Resources.map((item) => (
                   <li key={item}>
-                    <Link href={item === 'Blog' ? '/blog' : '#'}>
+                    <Link href={item === 'FAQ' ? '/about#faq' : '/blog'}>
                       <span className="text-muted-foreground hover:text-primary transition-colors text-sm cursor-pointer">
                         {item}
                       </span>
@@ -157,7 +157,7 @@ export function Footer() {
               viewport={{ once: true }}
               className="text-muted-foreground text-sm"
             >
-              © 2026 Gul Mohammad. All Rights Reserved.
+              © 2026 DevforDevs. All Rights Reserved.
             </motion.p>
 
             {/* Back to Top Button */}

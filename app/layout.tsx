@@ -12,8 +12,8 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Gul Mohammad - Full Stack Developer & Digital Expert',
-  description: 'Modern web development, mobile apps, UI/UX design, SEO, and digital marketing solutions. Build your digital presence with a full-stack expert.',
+  title: 'DevforDevs - Full Stack Developer & Digital Expert',
+  description: 'Modern web development, mobile apps, UI/UX design, SEO, and digital marketing solutions. Build your digital presence with DevforDevs.',
   generator: 'v0.app',
   icons: {
     icon: [

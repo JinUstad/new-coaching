@@ -3,61 +3,29 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import Link from 'next/link'
-import { BookOpen, Clock, Users, ArrowRight, Code, Video, Layout } from 'lucide-react'
+import { BookOpen, Clock, Users, ArrowRight, Code, Layout, Video, Globe, PenTool, Code2, Server, Cpu, Smartphone } from 'lucide-react'
+import { courses } from '@/lib/courses-data'
 
-const courses = [
-  {
-    id: 'web-dev',
-    title: 'Full-Stack Next.js & React Mastery',
-    category: 'Development',
-    icon: Code,
-    level: 'Beginner to Advanced',
-    duration: '12 Weeks',
-    students: '180+ Enrolled',
-    description: 'Learn to build modern, database-backed web applications with Tailwind CSS, Server Actions, and REST/GraphQL APIs.',
-    topics: ['Next.js App Router & React 19', 'Tailwind CSS v4 styling', 'Node.js & MongoDB integrations', 'Deployment & Vercel optimization'],
-    colorFrom: 'from-blue-500/10',
-    colorTo: 'to-indigo-500/10',
-    borderColor: 'group-hover:border-blue-500/50',
-    accentColor: 'text-blue-500',
-  },
-  {
-    id: 'ui-ux',
-    title: 'UI/UX Visual Design Systems',
-    category: 'Design',
-    icon: Layout,
-    level: 'Intermediate',
-    duration: '8 Weeks',
-    students: '120+ Enrolled',
-    description: 'Master professional design systems in Figma. Understand color psychology, typography hierarchy, and interactive wireframes.',
-    topics: ['Figma Auto Layout & Variables', 'Component variant architectures', 'Interactive wireframing & mapping', 'Developer handoff standards'],
-    colorFrom: 'from-purple-500/10',
-    colorTo: 'to-pink-500/10',
-    borderColor: 'group-hover:border-purple-500/50',
-    accentColor: 'text-purple-500',
-  },
-  {
-    id: 'video-motion',
-    title: 'Cinematic Video Editing & Motion Graphics',
-    category: 'Production',
-    icon: Video,
-    level: 'Beginner to Professional',
-    duration: '10 Weeks',
-    students: '150+ Enrolled',
-    description: 'Create high-converting video advertisements and cinematic short-form content with Adobe Premiere Pro and After Effects.',
-    topics: ['Premiere Pro timeline pacing', 'After Effects keyframe animation', 'Audio design & sound effects', 'Color grading & cinematic lighting'],
-    colorFrom: 'from-teal-500/10',
-    colorTo: 'to-emerald-500/10',
-    borderColor: 'group-hover:border-teal-500/50',
-    accentColor: 'text-teal-500',
-  },
-]
+const iconMap: { [key: string]: any } = {
+  Code,
+  Layout,
+  Video,
+  Globe,
+  PenTool,
+  Code2,
+  Server,
+  Cpu,
+  Smartphone
+}
 
 export function Courses() {
   const { ref, inView } = useInView({
     threshold: 0.15,
     triggerOnce: true,
   })
+
+  const flagshipIds = ['nextjs-mastery', 'design-systems', 'video-motion']
+  const flagshipCourses = courses.filter((c) => flagshipIds.includes(c.id))
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -94,7 +62,7 @@ export function Courses() {
         >
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-semibold mb-4">
             <BookOpen className="w-3.5 h-3.5" />
-            <span>LEARN FROM AN EXPERT</span>
+            <span>LEARN FROM EXPERTS</span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-extrabold text-foreground mb-4">
             FLAGSHIP TUITION COURSES
@@ -112,8 +80,8 @@ export function Courses() {
           animate={inView ? 'visible' : 'hidden'}
           className="grid lg:grid-cols-3 md:grid-cols-2 gap-8"
         >
-          {courses.map((course) => {
-            const Icon = course.icon
+          {flagshipCourses.map((course) => {
+            const Icon = iconMap[course.iconName] || BookOpen
             return (
               <motion.div
                 key={course.id}
@@ -161,10 +129,10 @@ export function Courses() {
                       Curriculum Highlights:
                     </h4>
                     <ul className="space-y-2">
-                      {course.topics.map((topic) => (
-                        <li key={topic} className="flex items-start gap-2.5 text-xs text-muted-foreground">
+                      {course.syllabus.map((module) => (
+                        <li key={module.title} className="flex items-start gap-2.5 text-xs text-muted-foreground">
                           <span className={`w-1.5 h-1.5 rounded-full mt-1.5 shrink-0 bg-primary`} />
-                          <span>{topic}</span>
+                          <span>{module.title}</span>
                         </li>
                       ))}
                     </ul>
@@ -172,12 +140,12 @@ export function Courses() {
                 </div>
 
                 {/* CTA Button */}
-                <Link href="/contact" passHref legacyBehavior>
+                <Link href={`/courses/${course.id}`} passHref legacyBehavior>
                   <motion.a
                     whileTap={{ scale: 0.95 }}
                     className="w-full py-3 bg-card border border-border hover:border-primary/50 hover:bg-primary/5 text-foreground hover:text-primary rounded-xl text-center text-sm font-semibold transition-all cursor-pointer flex items-center justify-center gap-1.5 relative z-10"
                   >
-                    Enroll Now
+                    View Details
                     <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                   </motion.a>
                 </Link>
@@ -189,3 +157,4 @@ export function Courses() {
     </section>
   )
 }
+

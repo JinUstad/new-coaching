@@ -8,8 +8,8 @@ import { AboutFaq } from '@/components/about-faq'
 import { Footer } from '@/components/footer'
 
 export const metadata: Metadata = {
-  title: 'About GM Digital - Led by Gul Mohammad',
-  description: 'Learn about GM Digital\'s story, values, team members, and find answers to frequently asked questions about our Next.js design, development, and marketing process.',
+  title: 'About DevforDevs - Modern Design & Development',
+  description: 'Learn about DevforDevs\'s story, values, team members, and find answers to frequently asked questions about our Next.js design, development, and marketing process.',
 }
 
 export default function AboutPage() {

@@ -25,8 +25,8 @@ export const blogs: BlogPost[] = [
     readTime: '6 min read',
     excerpt: 'Explore how Server Actions, Optimistic Updates, and compiler modifications in React 19 simplify state management and speed up delivery pipelines.',
     author: {
-      name: 'Gul Mohammad',
-      avatar: 'GM',
+      name: 'DevforDevs',
+      avatar: 'DFD',
       role: 'Full-Stack Developer & Head Coach'
     },
     color: 'text-blue-500',
@@ -47,8 +47,8 @@ export const blogs: BlogPost[] = [
     readTime: '5 min read',
     excerpt: 'A comprehensive guide on creating atomic tokens, fluid variables, and robust component variants that simplify the developer handoff process.',
     author: {
-      name: 'Gul Mohammad',
-      avatar: 'GM',
+      name: 'DevforDevs',
+      avatar: 'DFD',
       role: 'UI/UX Designer & Coach'
     },
     color: 'text-pink-500',
@@ -69,8 +69,8 @@ export const blogs: BlogPost[] = [
     readTime: '4 min read',
     excerpt: 'Learn the principles of pacing, sound design, and color grading that transform raw video assets into high-converting visual assets.',
     author: {
-      name: 'Gul Mohammad',
-      avatar: 'GM',
+      name: 'DevforDevs',
+      avatar: 'DFD',
       role: 'Video Editor & Content Expert'
     },
     color: 'text-amber-500',
@@ -81,6 +81,72 @@ export const blogs: BlogPost[] = [
       'The first 3 seconds of a video is the "hook". In short-form media, viewers decide in a fraction of a second whether to stay or scroll. A good hook introduces a clear problem or visualization, coupled with dynamic zooming, sound cues, or titles to trigger curiosity. Editing requires cutting out all pauses and filler words to maintain a brisk pace.',
       'Beyond visual cuts, audio is 50% of the video experience. Poor sound ruins high-quality footage. Professional audio involves three layers: clear vocal tracks with equalization (EQ) and noise reduction, subtle background tracks that match the emotional tone, and sound effects (swooshes, pops, clicks) that emphasize visual transitions.',
       'Lastly, color grading gives your footage a cinematic feel. Raw video files from high-end cameras look flat to preserve highlights. Applying color spaces and standard adjustments establishes mood. Warm tones invite comfort and coaching, while cool blue tones suggest corporate security. Professional grading ensures visual assets represent your brand image.'
+    ]
+  },
+  {
+    id: 'typescript-nextjs',
+    title: 'Advanced TypeScript Patterns in Next.js 16 Apps',
+    category: 'Development',
+    date: 'June 05, 2026',
+    readTime: '7 min read',
+    excerpt: 'Deep dive into type-safe dynamic layouts, route parameters, Server Action payloads, and component props matching in React 19.',
+    author: {
+      name: 'DevforDevs',
+      avatar: 'DFD',
+      role: 'Full-Stack Developer & Head Coach'
+    },
+    color: 'text-blue-500',
+    bgColor: 'bg-blue-500/10',
+    borderColor: 'hover:border-blue-500/40',
+    content: [
+      'Type safety is no longer just a luxury; it is a prerequisite for shipping robust SaaS platforms. With the release of Next.js 16 and React 19, typing has evolved, especially concerning server-client boundaries, dynamic routing parameters, and Server Action responses.',
+      'A key change in Next.js 16 is that page parameters (params and searchParams) are resolved asynchronously. This means their types must be mapped as Promises. Defining your page props correctly prevents runtime exceptions when matching slugs. We detail these wrapper typings and generic constraints to keep compiler configurations clean.',
+      'Server Actions also introduce unique typing requirements. When returning actions responses to hooks like useActionState, the returned payload must match a strict state schema—often including success flags, validation errors, and response messages. We cover how to construct clean action wrappers that handle error boundaries and return strongly typed JSON objects back to the browser.',
+      'Leveraging advanced TypeScript—such as utility types (Omit, Pick, ReturnType) and template literal types—allows us to build bulletproof component parameters. Keeping your codebase compile-safe ensures that visual elements and database mappings match exactly, reducing production bugs to near zero.'
+    ]
+  },
+  {
+    id: 'seo-growth-guide',
+    title: 'The 2026 SEO Playbook: How We Rank SaaS Projects on Google Page 1',
+    category: 'Academy',
+    date: 'June 02, 2026',
+    readTime: '8 min read',
+    excerpt: 'Discover technical page configurations, structured schema layouts, metadata structures, and load optimizations that search algorithms prioritize.',
+    author: {
+      name: 'DevforDevs',
+      avatar: 'DFD',
+      role: 'Lead SEO & Growth Strategist'
+    },
+    color: 'text-teal-500',
+    bgColor: 'bg-teal-500/10',
+    borderColor: 'hover:border-teal-500/40',
+    content: [
+      'Having a fast, beautiful SaaS website is useless if no one can find it. Search Engine Optimization (SEO) in 2026 is no longer about keyword stuffing—it is about technical site structures, semantic html tags, mobile response metrics, and rich schema markup configurations.',
+      'Search crawlers now prioritize Core Web Vitals above all else. Largest Contentful Paint (LCP) and Cumulative Layout Shift (CLS) directly impact your domains ranking. By writing clean layouts, minimizing layout shifts, and using Next.js Image components for optimized asset delivery, you can secure high performance scores.',
+      'Another critical aspect is Schema Markup (JSON-LD). Providing search engines with structured, machine-readable data about your courses, products, or reviews allows them to generate rich snippets in search results. This significantly increases click-through rates (CTR) and establishes domain authority in your industry.',
+      'Lastly, keyword research must focus on search intent. Users looking for "learn nextjs" want educational syllabus courses, while users looking for "hire nextjs developer" want services. By aligning page copy, headings structure, and meta descriptions to intent, you capture the exact traffic that converts into paying customers.'
+    ]
+  },
+  {
+    id: 'figma-to-code',
+    title: 'Bridging the Gap: Figma Variables to Tailwind CSS v4 Tokens',
+    category: 'Design',
+    date: 'May 28, 2026',
+    readTime: '6 min read',
+    excerpt: 'Step-by-step setup to map Figma design tokens directly to Tailwind v4 custom properties for automated frontend styling builds.',
+    author: {
+      name: 'DevforDevs',
+      avatar: 'DFD',
+      role: 'UI/UX Designer & Developer'
+    },
+    color: 'text-pink-500',
+    bgColor: 'bg-pink-500/10',
+    borderColor: 'hover:border-pink-500/40',
+    content: [
+      'One of the largest bottlenecks in web development is the translation of visual designs into actual frontend layouts. When design variables are changed in Figma, developers manually rewriting color hashes or spacing parameters results in visual drift and slower build pipelines.',
+      'By implementing Figma Variables, design systems can export semantic tokens directly. Tailwind CSS v4 introduces native CSS custom properties for configuration. Mapping Figma modes directly to CSS variables (e.g. mapping primary-color to var(--color-primary)) allows the code to absorb design modifications instantly.',
+      'We configure automated build pipelines that pull Figma styles, translate them to CSS root custom properties, and bundle them into Tailwind builds. This guarantees that layouts stay pixel-perfect, light/dark modes match exactly, and the team spends zero time debating padding or color overrides.',
+      'Setting up this bridge requires design discipline: using strict Auto Layout structures, defining descriptive variables, and mapping components 1-to-1 with React props. The payout is massive: it reduces development time for new screens by up to 60% and guarantees visual brand consistency across all products.'
     ]
   }
 ]

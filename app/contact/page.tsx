@@ -6,8 +6,8 @@ import { ContactProcess } from '@/components/contact-process'
 import { Footer } from '@/components/footer'
 
 export const metadata: Metadata = {
-  title: 'Contact GM Digital - Let\'s Work Together',
-  description: 'Reach out to Gul Mohammad and the GM Digital collective. Find our workspace location, operational hours, and direct communication channels.',
+  title: 'Contact DevforDevs - Let\'s Work Together',
+  description: 'Reach out to DevforDevs. Find our workspace location, operational hours, and direct communication channels.',
 }
 
 export default function ContactPage() {

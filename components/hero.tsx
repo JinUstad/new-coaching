@@ -75,7 +75,7 @@ export function Hero() {
               variants={itemVariants}
               className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-8 text-center max-w-3xl"
             >
-              I help businesses and creators grow online through modern websites,
+              We help businesses and creators grow online through modern websites,
               mobile applications, UI/UX design, video editing, SEO, and digital
               marketing solutions.
             </motion.p>
@@ -90,7 +90,7 @@ export function Hero() {
                   whileTap={{ scale: 0.95 }}
                   className="px-8 py-4 bg-primary text-white rounded-lg font-semibold hover:shadow-xl transition-shadow w-full sm:w-auto text-center cursor-pointer block"
                 >
-                  Hire Me
+                  Hire Us
                 </motion.a>
               </Link>
               <Link href="#services" passHref legacyBehavior>

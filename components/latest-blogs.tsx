@@ -65,7 +65,7 @@ export function LatestBlogs() {
           animate={inView ? 'visible' : 'hidden'}
           className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 mb-16"
         >
-          {blogs.map((post) => (
+          {blogs.slice(0, 3).map((post) => (
             <motion.div
               key={post.id}
               variants={cardVariants}

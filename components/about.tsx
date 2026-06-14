@@ -44,29 +44,29 @@ export function About() {
             variants={itemVariants}
             className="text-4xl sm:text-5xl font-bold mb-12 text-center text-balance"
           >
-            About Me
+            About Us
           </motion.h2>
 
           <div className="max-w-6xl mx-auto ">
             {/* Text Content */}
             <motion.div variants={itemVariants} className="space-y-6 ">
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                I am Gul Mohammad, a Full Stack Developer, UI/UX Designer, Video
-                Editor, and Digital Marketing Professional. I help businesses,
+                We are DevforDevs, a collective of Full Stack Developers, UI/UX Designers,
+                Video Editors, and Digital Marketing Professionals. We help businesses,
                 startups, and content creators build modern digital solutions that
                 increase visibility, engagement, and revenue.
               </p>
 
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                With over 5 years of learning and practical experience, I&apos;ve
+                With over 5 years of learning and practical experience, we have
                 worked with startups, mid-size companies, and individual creators to
-                transform their digital presence. My approach combines technical
+                transform their digital presence. Our approach combines technical
                 excellence with creative design to deliver solutions that not only
                 look great but perform exceptionally.
               </p>
 
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                I specialize in building scalable web applications, designing
+                We specialize in building scalable web applications, designing
                 intuitive user experiences, optimizing for search engines, and
                 creating compelling visual content. Every project is approached with
                 dedication to quality, innovation, and measurable results.

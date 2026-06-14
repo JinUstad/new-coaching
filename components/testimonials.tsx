@@ -19,7 +19,7 @@ const testimonials: Testimonial[] = [
     name: 'Sarah Johnson',
     company: 'Tech Startup Inc',
     content:
-      'Gul delivered an exceptional website that exceeded our expectations. His attention to detail and professional approach made the entire process smooth and efficient.',
+      'DevforDevs delivered an exceptional website that exceeded our expectations. Their attention to detail and professional approach made the entire process smooth and efficient.',
     rating: 5,
   },
   {
@@ -27,7 +27,7 @@ const testimonials: Testimonial[] = [
     name: 'Mike Chen',
     company: 'Digital Agency Pro',
     content:
-      'Working with Gul was a pleasure. He created a mobile app that our users absolutely love. The code quality and design are top-notch.',
+      'Working with DevforDevs was a pleasure. They created a mobile app that our users absolutely love. The code quality and design are top-notch.',
     rating: 5,
   },
   {
@@ -35,7 +35,7 @@ const testimonials: Testimonial[] = [
     name: 'Emma Davis',
     company: 'E-Commerce Solutions',
     content:
-      'The SEO optimization work Gul did for our site increased our organic traffic by 300%. Highly recommend for any digital marketing needs.',
+      'The SEO optimization work DevforDevs did for our site increased our organic traffic by 300%. Highly recommend for any digital marketing needs.',
     rating: 5,
   },
   {
@@ -43,7 +43,7 @@ const testimonials: Testimonial[] = [
     name: 'David Wilson',
     company: 'Creative Studios',
     content:
-      'Excellent UI/UX design work. Gul understood our brand vision perfectly and delivered designs that are both beautiful and functional.',
+      'Excellent UI/UX design work. DevforDevs understood our brand vision perfectly and delivered designs that are both beautiful and functional.',
     rating: 5,
   },
   {
@@ -51,7 +51,7 @@ const testimonials: Testimonial[] = [
     name: 'Lisa Anderson',
     company: 'Marketing Collective',
     content:
-      'The video editing work was incredible! Our promotional videos got amazing engagement and Gul was great to work with.',
+      'The video editing work was incredible! Our promotional videos got amazing engagement and DevforDevs was great to work with.',
     rating: 5,
   },
 ]
@@ -95,7 +95,7 @@ export function Testimonials() {
             What Clients Say
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Real feedback from clients who have experienced my work and
+            Real feedback from clients who have experienced our work and
             professionalism.
           </p>
         </motion.div>

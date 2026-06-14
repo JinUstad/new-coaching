@@ -9,8 +9,8 @@ import { ServicesCta } from '@/components/services-cta'
 import { Footer } from '@/components/footer'
 
 export const metadata: Metadata = {
-  title: 'Our Services - GM Digital',
-  description: 'Explore the digital services provided by Gul Mohammad and the GM Digital collective, including Next.js web application development, Figma UI/UX prototyping, SEO, and video editing.',
+  title: 'Our Services - DevforDevs',
+  description: 'Explore the digital services provided by DevforDevs, including Next.js web application development, Figma UI/UX prototyping, SEO, and video editing.',
 }
 
 export default function ServicesPage() {

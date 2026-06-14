@@ -328,7 +328,7 @@ export default function BlogPage() {
                 <div className="border-t border-border/80 pt-8 mt-12 text-center">
                   <h4 className="font-extrabold text-sm text-foreground mb-2">Want personal hands-on training?</h4>
                   <p className="text-xs text-muted-foreground mb-5 max-w-md mx-auto">
-                    Gul Mohammad holds 1-on-1 feedback sessions, review sprints, and video cutting programs in the academy courses.
+                    DevforDevs holds 1-on-1 feedback sessions, review sprints, and video cutting programs in the academy courses.
                   </p>
                   <Link href="/contact" passHref legacyBehavior>
                     <a
