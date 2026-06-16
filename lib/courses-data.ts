@@ -24,28 +24,28 @@ export const courses: Course[] = [
   // Flagship Courses (Homepage)
   {
     id: 'nextjs-mastery',
-    title: 'Full-Stack Next.js & React Mastery',
+    title: 'AI-Powered Full-Stack Next.js & Agentic Web',
     category: 'Development',
     iconName: 'Code',
     level: 'Beginner to Advanced',
     duration: '12 Weeks',
     students: '180+ Enrolled',
-    description: 'Learn to build modern, database-backed web applications with Tailwind CSS, Server Actions, and REST/GraphQL APIs.',
-    longDescription: 'This course is a comprehensive, production-grade roadmap designed to take you from core React principles to deploying highly scalable SaaS applications. You will learn next-generation paradigms: React 19 features, Next.js App Router, Server Components, and seamless database structures.',
+    description: 'Learn to build modern, database-backed web applications integrated with OpenAI, Vercel AI SDK, and LangChain.',
+    longDescription: 'This course is a comprehensive roadmap designed to teach you how to build production-grade web systems powered by generative AI. You will learn next-generation paradigms: React 19 features, Next.js App Router, Vercel AI SDK integrations, Pinecone vector search, and dynamic backend agent setups.',
     syllabus: [
-      { week: 'Weeks 1-3', title: 'React 19 & App Router Basics', topics: ['Server & Client Components', 'Routing & Layout hierarchies', 'Suspense & dynamic loading'] },
-      { week: 'Weeks 4-6', title: 'State & Database Operations', topics: ['Server Actions & Forms state', 'MongoDB schemas & relationships', 'Prisma ORM setup'] },
-      { week: 'Weeks 7-9', title: 'Security & APIs', topics: ['NextAuth/Auth.js configuration', 'JWT cookies & middleware', 'RESTful & GraphQL API routers'] },
-      { week: 'Weeks 10-12', title: 'Deployment & Scaling', topics: ['Vercel edge caching rules', 'Docker container setups', 'Unit testing & lighthouse metrics'] }
+      { week: 'Weeks 1-3', title: 'React 19, Next.js 16 & LLM API Basics', topics: ['Server & Client Components', 'Vercel AI SDK integration', 'Streaming responses & suspense patterns'] },
+      { week: 'Weeks 4-6', title: 'Vector DBs & Embeddings', topics: ['Text embeddings with OpenAI', 'Pinecone / pgvector search schema', 'Data hydration & retrieval pipelines'] },
+      { week: 'Weeks 7-9', title: 'Agentic Workflows & Tool Calling', topics: ['LangChain.js orchestration', 'Function calling & agent execution', 'Auth.js security & API limits'] },
+      { week: 'Weeks 10-12', title: 'Deployment & Autonomous Operations', topics: ['Edge routing & caching rules', 'Docker setup for python side-runners', 'Lighthouse optimization & cost controls'] }
     ],
     whatYouWillLearn: [
-      'Master Server Actions and React 19 hooks like useActionState and useOptimistic',
-      'Integrate production-ready authentication layers using Auth.js',
-      'Optimize web vitals to score 100 on Google PageSpeed Insights',
-      'Design robust databases with Prisma, PostgreSQL, and MongoDB'
+      'Master Server Actions and React 19 hooks with streaming AI outputs',
+      'Integrate production-ready authentication and AI usage limiters',
+      'Implement Retrieval-Augmented Generation (RAG) using Pinecone and Postgres',
+      'Orchestrate autonomous agent systems that use tool calling to execute code'
     ],
     prerequisites: ['Basic HTML/CSS knowledge', 'Familiarity with ES6 JavaScript arrays and objects'],
-    tools: ['Next.js', 'React 19', 'Tailwind CSS v4', 'PostgreSQL', 'Prisma', 'Vercel'],
+    tools: ['Next.js 16', 'Vercel AI SDK', 'OpenAI API', 'LangChain', 'Pinecone', 'Prisma'],
     color: 'text-blue-500',
     bgColor: 'bg-blue-500/10',
     borderColor: 'hover:border-blue-500/40 group-hover:border-blue-500/50',
@@ -55,28 +55,28 @@ export const courses: Course[] = [
   },
   {
     id: 'design-systems',
-    title: 'UI/UX Visual Design Systems',
+    title: 'AI-Driven UI/UX & Generative Design Systems',
     category: 'Design',
     iconName: 'Layout',
     level: 'Intermediate',
     duration: '8 Weeks',
     students: '120+ Enrolled',
-    description: 'Master professional design systems in Figma. Understand color psychology, typography hierarchy, and interactive wireframes.',
-    longDescription: 'Establish design consistency across screens, platforms, and teams. In this course, you will learn to build functional design libraries in Figma that integrate 1-to-1 with coding systems, covering auto layout, fluid typography, and nested token ecosystems.',
+    description: 'Master professional Figma design systems supercharged by Figma AI, Midjourney generation, and prompt frameworks.',
+    longDescription: 'Establish design consistency and accelerate your workflow by 10x. In this course, you will learn to build functional design libraries in Figma that integrate with AI assistants, covering token studio exports, generative color mapping, and rapid layout variables.',
     syllabus: [
-      { week: 'Weeks 1-2', title: 'Atomic Design & Figma Tools', topics: ['Atomic setups & structure rules', 'Figma vectors & pen masteries', 'Layout grids & fluid bounds'] },
-      { week: 'Weeks 3-4', title: 'Figma Auto Layout v5 & Props', topics: ['Dynamic constraints & variables', 'Component property architecture', 'Nested structural configurations'] },
-      { week: 'Weeks 5-6', title: 'Design Tokens & Themes', topics: ['Semantic token systems', 'Light & dark theme switching setups', 'Typography scales & line metrics'] },
-      { week: 'Weeks 7-8', title: 'Handoff & Specifications', topics: ['Developer specs documentation', 'Redlining interfaces', 'Interactive prototype animations'] }
+      { week: 'Weeks 1-2', title: 'AI-Assisted Layouts & Figma Tools', topics: ['Figma AI plugin ecosystem', 'Midjourney asset generation rules', 'Responsive frames & layout bounds'] },
+      { week: 'Weeks 3-4', title: 'Figma Auto Layout v5 & Variables', topics: ['Dynamic variables constraints', 'Component properties structure', 'AI-assisted variant generation'] },
+      { week: 'Weeks 5-6', title: 'Design Tokens & Themes via AI', topics: ['Defining color & type tokens with AI', 'Light & dark theme switching setups', 'Automated token translations to Tailwind'] },
+      { week: 'Weeks 7-8', title: 'Handoff & Styling Automation', topics: ['Developer spec sheets generation', 'CSS variable maps validation', 'Interactive micro-interactions prototype'] }
     ],
     whatYouWillLearn: [
-      'Build fully responsive component sheets using Figma Auto Layout v5',
-      'Configure global tokens for automatic light/dark mode design maps',
-      'Produce clickable micro-interaction visual prototypes',
-      'Coordinate frictionless developer handoff specifications'
+      'Build fully responsive component sheets using Figma Auto Layout and AI plugins',
+      'Generate stunning vector assets and layouts using prompt templates',
+      'Configure global tokens for automatic light/dark mode css property maps',
+      'Coordinate frictionless developer handoff specifications with auto-generated code'
     ],
     prerequisites: ['Understand basic user personas', 'Familiarity with basic Figma tools is helpful but not required'],
-    tools: ['Figma', 'FigJam', 'Tokens Studio', 'Miro'],
+    tools: ['Figma AI', 'Midjourney', 'Tokens Studio', 'Adobe Firefly'],
     color: 'text-purple-500',
     bgColor: 'bg-purple-500/10',
     borderColor: 'hover:border-purple-500/40 group-hover:border-purple-500/50',
@@ -86,28 +86,28 @@ export const courses: Course[] = [
   },
   {
     id: 'video-motion',
-    title: 'Cinematic Video Editing & Motion Graphics',
+    title: 'AI-Enhanced Cinematic Video & Synthetic Media',
     category: 'Production',
     iconName: 'Video',
     level: 'Beginner to Professional',
     duration: '10 Weeks',
     students: '150+ Enrolled',
-    description: 'Create high-converting video advertisements and cinematic short-form content with Adobe Premiere Pro and After Effects.',
-    longDescription: 'Video is the primary driver of online engagement. Learn the elite principles of narrative splicing, kinetic subtitles, background sound mixing, and cinematic color space configurations to produce video content that holds viewer attention.',
+    description: 'Create high-converting video ads and cinematic content using Premiere Pro AI, ElevenLabs, and Runway Gen-2.',
+    longDescription: 'Video is the primary driver of online engagement, and AI is revolutionizing post-production. Learn the principles of narrative splicing, AI voice synthesis, generative B-roll, and automated sound mapping to produce viral short-form and cinematic assets.',
     syllabus: [
-      { week: 'Weeks 1-3', title: 'Premiere Pro Timeline Mastery', topics: ['Cinematic cuts & assembly setups', 'Hook structures & pacing guides', 'Audio track nesting & routing'] },
-      { week: 'Weeks 4-6', title: 'After Effects & Motion Graphics', topics: ['Keyframing & curves layout', 'Kinetic typography scripts', 'Tracking & mask elements'] },
-      { week: 'Weeks 7-8', title: 'Audio Design & EQ Filters', topics: ['Vocal enhancement steps', 'Ambient layer mixing rules', 'Sound effect integration syncs'] },
-      { week: 'Weeks 9-10', title: 'Color Grading & Exporting', topics: ['Cinematic grading with LUTs', 'Lighting & highlight recovery', 'Bitrate compression rules for web'] }
+      { week: 'Weeks 1-3', title: 'Premiere Pro & AI Audio Alignment', topics: ['Text-based video editing setups', 'Hook structural rules & visual pacing', 'Enhance Speech & AI noise filters'] },
+      { week: 'Weeks 4-6', title: 'Runway Gen-2 & Synthetics', topics: ['Text-to-video prompt engineering', 'Midjourney image-to-video panning', 'Adobe Firefly generative fills'] },
+      { week: 'Weeks 7-8', title: 'AI Voice Cloning & EQ Mixing', topics: ['ElevenLabs voice cloning techniques', 'Dynamic script-to-audio rendering', 'Ambient track side-chain setups'] },
+      { week: 'Weeks 9-10', title: 'Color Grading & Algorithmic Exporting', topics: ['Cinematic grading with AI LUTs', 'Auto-reframe for mobile layouts', 'High-quality bitrates configuration'] }
     ],
     whatYouWillLearn: [
-      'Master fast, high-tension short-form timeline pacing and hook formulas',
-      'Create custom text animations and transitions in After Effects',
-      'Perform audio EQ, noise elimination, and atmospheric sound design',
-      'Color grade flat camera spaces to custom cinematic styles'
+      'Master short-form video pacing supercharged by text-based AI cutting tools',
+      'Generate professional video assets from textual prompts and raw sketches',
+      'Clone and synthesize professional voiceovers with perfect emotional pacing',
+      'Grade colors and design atmospheric audio systems to match brand mood'
     ],
     prerequisites: ['Computer with a dedicated GPU is highly recommended', 'No editing experience required'],
-    tools: ['Premiere Pro', 'After Effects', 'Audition', 'DaVinci Resolve'],
+    tools: ['Runway Gen-2', 'ElevenLabs', 'Premiere Pro AI', 'After Effects', 'Midjourney'],
     color: 'text-teal-500',
     bgColor: 'bg-teal-500/10',
     borderColor: 'hover:border-teal-500/40 group-hover:border-teal-500/50',
@@ -119,216 +119,216 @@ export const courses: Course[] = [
   // Catalog Courses
   {
     id: 'web-dev',
-    title: 'Web Development Core',
+    title: 'AI-Assisted Web Dev & Rapid Prototyping',
     category: 'Development',
     iconName: 'Globe',
     level: 'Beginner',
     duration: '6 Weeks',
     students: '100+ Enrolled',
-    description: 'Learn the foundational languages of the web. Build clean, static websites and understand responsive rendering.',
-    longDescription: 'Start your coding career here. Learn the essential blocks of building web documents. Focus on accessibility, fluid layout engines, and standard JavaScript logic without framework overhead.',
+    description: 'Learn the core languages of the web while leveraging Cursor, Copilot, and v0 to build sites at warp speed.',
+    longDescription: 'Start your coding career with the tools of tomorrow. Learn the essential blocks of building web pages. Focus on semantic HTML, accessible CSS layouts, and modern JavaScript logic, all guided by AI co-pilots.',
     syllabus: [
-      { week: 'Weeks 1-2', title: 'HTML5 Foundations', topics: ['Semantic layout markup', 'Forms & visual element maps', 'ARIA tags & accessibility rules'] },
-      { week: 'Weeks 3-4', title: 'CSS3 Page Design', topics: ['Flexbox & CSS Grid architectures', 'Media query responsive styles', 'Animations & custom filters'] },
-      { week: 'Weeks 5-6', title: 'JavaScript & Web Deployment', topics: ['DOM manipulation basics', 'Event handlers & functions', 'Git & GitHub deployment scripts'] }
+      { week: 'Weeks 1-2', title: 'HTML5 & AI Layout Prompting', topics: ['Semantic structures & accessibility rules', 'v0.dev layout prompting systems', 'UI wireframing strategies'] },
+      { week: 'Weeks 3-4', title: 'CSS3 & Tailwind Prototyping', topics: ['Flexbox & CSS Grid fundamentals', 'Tailwind v4 utility structures', 'AI-assisted responsive style overrides'] },
+      { week: 'Weeks 5-6', title: 'JavaScript & AI Debugging', topics: ['DOM events handling basics', 'Cursor IDE autocomplete workflows', 'Live publishing to Netlify / Vercel'] }
     ],
     whatYouWillLearn: [
-      'Write structured, valid, and accessible HTML5 documents from scratch',
-      'Build fully responsive websites without relying on third-party frameworks',
-      'Apply dynamic styles and handle client events using vanilla JavaScript',
-      'Publish live websites directly to Netlify or GitHub Pages'
+      'Write valid, semantic HTML5 structures in collaboration with LLM systems',
+      'Build fully responsive web layouts using Tailwind CSS v4 and fluid properties',
+      'Debug client scripts and write functional JS using Cursor editor models',
+      'Publish high-performance static websites directly to modern hosting providers'
     ],
     prerequisites: ['No prior programming background required'],
-    tools: ['VS Code', 'Git', 'HTML5', 'CSS3', 'Modern JavaScript'],
+    tools: ['Cursor IDE', 'v0.dev', 'GitHub Copilot', 'HTML5', 'CSS3', 'Modern JS'],
     color: 'text-blue-500',
     bgColor: 'bg-blue-500/10',
     borderColor: 'hover:border-blue-500/40'
   },
   {
     id: 'figma-dev',
-    title: 'Figma Development Systems',
+    title: 'Automated Figma & AI Token Orchestration',
     category: 'Design Systems',
     iconName: 'PenTool',
     level: 'Beginner to Intermediate',
     duration: '8 Weeks',
     students: '80+ Enrolled',
-    description: 'Design digital layouts from scratch. Master design systems, auto-layout architectures, and components.',
-    longDescription: 'Master modern layout frameworks and design standards in Figma. Learn how to convert static mockups into reusable component libraries with variables, easing the workflow for dev teams.',
+    description: 'Design UI structures in Figma using automated pipelines, generative variables, and JSON token outputs.',
+    longDescription: 'Master design tokens and automation tools in Figma. Learn how to convert static designs into responsive components with programmatic variables, synchronizing changes automatically with frontend libraries.',
     syllabus: [
-      { week: 'Weeks 1-3', title: 'Figma Components', topics: ['Component variants & properties', 'Interactive states configurations', 'Nested structures setups'] },
-      { week: 'Weeks 4-5', title: 'Auto Layout v5 Sizing', topics: ['Min/max constraints rules', 'Padding & margin boundaries', 'Responsive visual structures'] },
-      { week: 'Weeks 6-8', title: 'Design Token setups', topics: ['Defining color & type tokens', 'Variables & modes setup', 'Exporting systems to JSON code'] }
+      { week: 'Weeks 1-3', title: 'Figma Auto Layout & Component Specs', topics: ['Atomic components creation', 'Figma AI prompt templates', 'Variant properties mapping'] },
+      { week: 'Weeks 4-5', title: 'CSS Variable Modes & Tokens', topics: ['Defining color & type tokens with AI', 'Light & dark switching structures', 'Variables token nesting'] },
+      { week: 'Weeks 6-8', title: 'Tokens Studio & Code Sync', topics: ['Exporting token JSON scripts', 'Synchronizing changes via GitHub API', 'Automating Tailwind class generation'] }
     ],
     whatYouWillLearn: [
-      'Architect atomic design systems in Figma with nesting and properties',
-      'Utilize layout variables to build dynamic templates',
-      'Bridge designer and developer workflows with JSON token sheets',
-      'Build scalable multi-brand component setups'
+      'Build modular, responsive UI components using auto-layout variables',
+      'Utilize Figma AI tools to generate consistent design token layouts',
+      'Establish a unified bridge to translate token files directly into React CSS rules',
+      'Structure high-fidelity layouts optimized for automated developer handoff'
     ],
-    prerequisites: ['Familiarity with visual principles is helpful'],
-    tools: ['Figma', 'Tokens Studio', 'Figma API'],
+    prerequisites: ['Familiarity with visual design principles is helpful'],
+    tools: ['Figma API', 'Figma AI', 'Tokens Studio', 'Claude 3.5 Sonnet'],
     color: 'text-pink-500',
     bgColor: 'bg-pink-500/10',
     borderColor: 'hover:border-pink-500/40'
   },
   {
     id: 'frontend-dev',
-    title: 'Frontend Engineering (React)',
+    title: 'AI-Native Frontend Engineering (React & v0)',
     category: 'Development',
     iconName: 'Code2',
     level: 'Intermediate',
     duration: '10 Weeks',
     students: '120+ Enrolled',
-    description: 'Build fast, interactive user interfaces with React, Next.js, Tailwind CSS, and Framer Motion.',
-    longDescription: 'React is the market leader for interactive UI delivery. We cover component lifecycle states, styling libraries, transition animations, and modern API ingestion frameworks.',
+    description: 'Build animated user interfaces with React 19, Next.js, and Framer Motion, optimized via AI coding assistants.',
+    longDescription: 'Learn frontend engineering from the future. Design high-fidelity, interactive, and beautifully animated web interfaces using React 19 and Tailwind CSS v4, while optimizing the build process via prompt engineering.',
     syllabus: [
-      { week: 'Weeks 1-3', title: 'React Core & States', topics: ['Hooks & custom state logic', 'Props & virtual DOM maps', 'Lists, conditional rendering'] },
-      { week: 'Weeks 4-6', title: 'Modern Styling & Transitions', topics: ['Tailwind CSS layout rules', 'Framer Motion transition triggers', 'Responsive grid implementations'] },
-      { week: 'Weeks 7-10', title: 'Next.js App Architecture', topics: ['App Router & components structure', 'Data fetching & hydration models', 'SEO & metadata implementations'] }
+      { week: 'Weeks 1-3', title: 'React 19 Hooks & AI Generation', topics: ['Custom state hooks & patterns', 'v0.dev UI components generation', 'Dynamic data binding structures'] },
+      { week: 'Weeks 4-6', title: 'High-Fidelity Transitions & Layouts', topics: ['Tailwind v4 styling rules', 'Framer Motion page animations', 'Cursor code refactoring pipelines'] },
+      { week: 'Weeks 7-10', title: 'Next.js Routing & Data Hydration', topics: ['App Router directory setups', 'Server/Client data streaming hooks', 'SEO meta tag optimizations'] }
     ],
     whatYouWillLearn: [
-      'Write clean, reusable React functional components and hooks',
-      'Apply high-fidelity styles with utility classes and custom property structures',
-      'Coordinate fluid page transitions using Framer Motion animations',
-      'Build performant Next.js static and dynamic web structures'
+      'Write clean, modular React hooks in collaboration with AI code generators',
+      'Apply fluid page transitions and interactive hover effects with Framer Motion',
+      'Refactor complex components using Cursor Chat and Claude 3.5',
+      'Deploy performant, fully accessible frontend layouts scoring 95+ on audits'
     ],
     prerequisites: ['Solid understanding of ES6 JavaScript and HTML/CSS styling'],
-    tools: ['React', 'Next.js', 'Tailwind CSS', 'Framer Motion', 'Eslint'],
+    tools: ['React 19', 'Next.js 16', 'v0.dev', 'Cursor', 'Tailwind CSS v4', 'Framer Motion'],
     color: 'text-purple-500',
     bgColor: 'bg-purple-500/10',
     borderColor: 'hover:border-purple-500/40'
   },
   {
     id: 'ui-ux',
-    title: 'UI/UX Visual Design',
+    title: 'AI UX Research & Cognitive Layout Optimization',
     category: 'Design',
     iconName: 'Compass',
     level: 'Beginner to Intermediate',
     duration: '8 Weeks',
     students: '90+ Enrolled',
-    description: 'Understand the core psychology of layouts. Design interfaces that are intuitive, clean, and accessible.',
-    longDescription: 'High performance is backed by human-centric layouts. You will analyze user mental models, hierarchy structures, color spaces, and click behaviors to shape interfaces that feel smooth and convert users.',
+    description: 'Design interfaces backed by cognitive psychology. Optimize click behaviors using predictive AI analytics and heatmaps.',
+    longDescription: 'Accelerate user conversions through scientific design. Learn to analyze user mental models, hierarchy rules, and focus patterns using AI eye-tracking heatmaps and simulated user personas.',
     syllabus: [
-      { week: 'Weeks 1-2', title: 'Visual Psychology', topics: ['Gestalt principles of layouts', 'Color theory & visual hierarchy', 'Typography hierarchy frameworks'] },
-      { week: 'Weeks 3-5', title: 'User Research & Mockups', topics: ['User personas & wireframing workflows', 'Journey mapping setups', 'High-fidelity mockup designs'] },
-      { week: 'Weeks 6-8', title: 'Interactions & Accessibility', topics: ['Micro-interaction visual guidelines', 'WCAG color & contrast regulations', 'Usability validation audits'] }
+      { week: 'Weeks 1-2', title: 'UI Hierarchy & Gestalt Principles', topics: ['Gestalt structural laws', 'Visual weights & layout focus rules', 'Color contrasting standards'] },
+      { week: 'Weeks 3-5', title: 'AI-Driven User Testing & Persons', topics: ['LLM persona simulation templates', 'Attention map analysis scripts', 'A/B testing mockup structures'] },
+      { week: 'Weeks 6-8', title: 'Conversion Systems & Audit Metrics', topics: ['Form conversions funnel rules', 'WCAG contrast compliance scans', 'Interactive user feedback systems'] }
     ],
     whatYouWillLearn: [
-      'Apply Gestalt visual laws to balance website layout grids',
-      'Determine color palettes and typography structures for corporate profiles',
-      'Construct user persona flows that minimize conversion friction',
-      'Audit interfaces for WCAG accessibility standards'
+      'Structure high-fidelity layouts based on Gestalt visual laws and cognitive speed',
+      'Generate and iterate user personas using ChatGPT to find product vulnerabilities',
+      'Run predictive AI attention heatmap analyses before code implementation',
+      'Audit interfaces to ensure full WCAG contrast and accessibility rules'
     ],
     prerequisites: ['No background required', 'A keen eye for layout balance is helpful'],
-    tools: ['Figma', 'Miro', 'Contrast Checkers', 'UsabilityTest Tools'],
+    tools: ['Attention Insight', 'ChatGPT UI Prompts', 'Figma', 'Hotjar AI'],
     color: 'text-orange-500',
     bgColor: 'bg-orange-500/10',
     borderColor: 'hover:border-orange-500/40'
   },
   {
     id: 'backend-dev',
-    title: 'Backend Development & Databases',
+    title: 'AI backend APIs, LLM Agents & Vector Databases',
     category: 'Development',
     iconName: 'Server',
     level: 'Intermediate to Advanced',
     duration: '10 Weeks',
     students: '75+ Enrolled',
-    description: 'Design robust APIs, schema databases, and authentication handlers. Learn server systems logic.',
-    longDescription: 'Power web clients with secure, performant backends. This course targets server routing, REST schemas, SQL/NoSQL databases, and security strategies.',
+    description: 'Design robust Node.js backend APIs, database models, Pinecone vector search, and LLM middleware.',
+    longDescription: 'Power web interfaces with intelligent backends. This course focuses on backend server architectures, relational databases, token optimization, and custom RAG (Retrieval-Augmented Generation) pipelines.',
     syllabus: [
-      { week: 'Weeks 1-3', title: 'Node.js & Express API servers', topics: ['Event loops & async logic setups', 'Middleware pipelines structures', 'REST endpoint integrations'] },
-      { week: 'Weeks 4-6', title: 'Databases & Mongoose Modeling', topics: ['MongoDB schema configurations', 'Indexing & query optimizers', 'PostgreSQL tables relationships'] },
-      { week: 'Weeks 7-10', title: 'Security & Deployments', topics: ['JWT token session controls', 'Cors, hashing, and helmet rules', 'Hosting APIs to cloud environments'] }
+      { week: 'Weeks 1-3', title: 'Express.js Servers & OpenAI Integration', topics: ['Asynchronous middleware routes', 'Streaming completions API endpoints', 'JWT secure authentication loops'] },
+      { week: 'Weeks 4-6', title: 'Databases & Vector Embeddings', topics: ['MongoDB database schemas modeling', 'Pinecone / Pgvector indexing setups', 'Semantic query matching logic'] },
+      { week: 'Weeks 7-10', title: 'Agent Orchestration & Deployments', topics: ['LangChain agent chains structures', 'Caching schemas with Redis', 'Deploying containerized API systems'] }
     ],
     whatYouWillLearn: [
-      'Write RESTful endpoints using Express and Node.js core modules',
-      'Model relational PostgreSQL and schema-free MongoDB configurations',
-      'Configure JWT tokens and password hashing systems',
-      'Deploy server runtimes with proper environment configurations'
+      'Write secure, structured REST API routers in Node.js with Express and TypeScript',
+      'Integrate LangChain.js to orchestrate backend prompts and database operations',
+      'Design fast vector search databases using Pinecone for AI contextual search',
+      'Manage API rate limiting, caching setups, and environment configurations'
     ],
     prerequisites: ['JavaScript programming foundation', 'Understand basic client/server request protocols'],
-    tools: ['Node.js', 'Express', 'MongoDB', 'PostgreSQL', 'JWT', 'Docker'],
+    tools: ['Node.js', 'Express', 'Pinecone DB', 'LangChain', 'OpenAI API', 'Docker'],
     color: 'text-indigo-500',
     bgColor: 'bg-indigo-500/10',
     borderColor: 'hover:border-indigo-500/40'
   },
   {
     id: 'fullstack-dev',
-    title: 'Full-Stack Software Engineering',
+    title: 'Autonomous AI SaaS Builder: Next.js & LangChain',
     category: 'Development',
     iconName: 'Cpu',
     level: 'Advanced',
     duration: '12 Weeks',
     students: '140+ Enrolled',
-    description: 'Combine frontend design with backend database systems to deploy complete SaaS applications.',
-    longDescription: 'Bring systems together. Combine front-end interactivity with back-end database schemas to build, secure, and deploy complete SaaS portals with payment pathways and real-time updates.',
+    description: 'Combine frontend design with backend database systems to deploy complete autonomous AI SaaS portals.',
+    longDescription: 'Bring systems together to build complete AI startups. From concept to production, learn to construct a full-stack SaaS application with user dashboards, dynamic databases, OpenAI API integration, automated Stripe subscription systems, and GitHub Actions CI/CD.',
     syllabus: [
-      { week: 'Weeks 1-4', title: 'Architecture Planning', topics: ['System design & DB planning', 'Auth middlewares setup', 'Folder routing models'] },
-      { week: 'Weeks 5-8', title: 'Core Features Coding', topics: ['State systems configuration', 'Payment integrations (Stripe)', 'Real-time features via Websockets'] },
-      { week: 'Weeks 9-12', title: 'Testing & Live Operations', topics: ['Integration tests suites', 'CI/CD pipeline structures', 'Performance scaling audits'] }
+      { week: 'Weeks 1-4', title: 'TypeScript Systems Architecture', topics: ['System design & DB schema planning', 'Auth middlewares & token limiters', 'Dynamic directory route configs'] },
+      { week: 'Weeks 5-8', title: 'Core Agent Features & Billing', topics: ['LangChain.js pipeline configurations', 'Stripe checkout & webhook hooks', 'Real-time WebSocket chat flows'] },
+      { week: 'Weeks 9-12', title: 'CI/CD & Live Cloud Deployments', topics: ['Testing suites for AI models', 'GitHub Actions workflow configurations', 'SaaS launch audits & performance checks'] }
     ],
     whatYouWillLearn: [
-      'Establish unified TypeScript client and server interfaces',
-      'Manage multi-page state and background updates',
-      'Integrate Stripe payment gateways and webhooks handlers',
-      'Implement CI/CD deployment runs via GitHub Actions'
+      'Architect type-safe full-stack React and Next.js applications using TypeScript',
+      'Create custom AI chatbots that fetch contextual database records in real-time',
+      'Configure payment gateways and handle dynamic webhooks in Vercel functions',
+      'Automate integration testing and build configurations using CI/CD loops'
     ],
     prerequisites: ['Intermediate React capability', 'Familiarity with basic server architectures'],
-    tools: ['TypeScript', 'Next.js', 'Node.js', 'PostgreSQL', 'Stripe', 'GitLab CI'],
+    tools: ['TypeScript', 'Next.js App Router', 'LangChain.js', 'Stripe', 'PostgreSQL', 'Vercel'],
     color: 'text-teal-500',
     bgColor: 'bg-teal-500/10',
     borderColor: 'hover:border-teal-500/40'
   },
   {
     id: 'app-dev',
-    title: 'App Development (React Native)',
+    title: 'AI-Integrated Mobile Apps (React Native & Whisper)',
     category: 'Development',
     iconName: 'Smartphone',
     level: 'Advanced',
     duration: '10 Weeks',
     students: '85+ Enrolled',
-    description: 'Build native, cross-platform mobile apps for iOS and Android using React Native and Expo frameworks.',
-    longDescription: 'Deploy native mobile apps without writing distinct Swift or Kotlin code bases. Learn native layout mechanics, state management, push notification systems, and how to configure builds for App Stores.',
+    description: 'Build native mobile apps with React Native, incorporating speech-to-text, device vision, and LLM APIs.',
+    longDescription: 'Create smart mobile experiences. Master native mobile views, global state routines, and device API integrations (speech-to-text, device cameras, local models) using Expo and EAS build tools.',
     syllabus: [
-      { week: 'Weeks 1-3', title: 'Native Layout mechanics', topics: ['Flexbox rules differences', 'Expo Router systems', 'Component styling layouts'] },
-      { week: 'Weeks 4-6', title: 'Hardware Integration', topics: ['Camera & location access permissions', 'Local sqlite database models', 'Push notification listeners'] },
-      { week: 'Weeks 7-10', title: 'Store Builds & Operations', topics: ['EAS builds command configurations', 'Google Play uploads setup', 'TestFlight user distributions'] }
+      { week: 'Weeks 1-3', title: 'Native Mobile & Expo Router Layouts', topics: ['Flexbox mobile styling systems', 'Expo Router parameters mapping', 'Screen state transition rules'] },
+      { week: 'Weeks 4-6', title: 'Whisper Audio & Device Cameras', topics: ['Speech-to-text Whisper integrations', 'Local SQLite dataset configurations', 'Device hardware authorization loops'] },
+      { week: 'Weeks 7-10', title: 'Build CLI & App Store Distributions', topics: ['EAS configuration files templates', 'TestFlight test runs setups', 'Google Play Developer release configurations'] }
     ],
     whatYouWillLearn: [
-      'Build responsive screens matching native design structures',
-      'Access local device features like cameras, maps, and local directories',
-      'Coordinate React Native global state routines',
-      'Automate builds and store updates using EAS CLI'
+      'Design fully responsive native mobile app screens matching high-fidelity specs',
+      'Access local speech recognition and visual processing models on-device',
+      'Configure global states and handle network requests securely on mobile clients',
+      'Publish live mobile app updates automatically using EAS Update CLI'
     ],
     prerequisites: ['React layout state familiarity', 'JavaScript ES6 core logic'],
-    tools: ['React Native', 'Expo', 'EAS CLI', 'Android Studio', 'Xcode'],
+    tools: ['React Native', 'Expo', 'EAS CLI', 'Whisper API', 'TensorFlow Lite'],
     color: 'text-emerald-500',
     bgColor: 'bg-emerald-500/10',
     borderColor: 'hover:border-emerald-500/40'
   },
   {
     id: 'video-editing',
-    title: 'Video Editing & Content Creation',
+    title: 'AI Content Creation & Video Automation',
     category: 'Production',
     iconName: 'Video',
     level: 'Beginner to Professional',
     duration: '8 Weeks',
     students: '95+ Enrolled',
-    description: 'Master storytelling through video. Learn timeline pacing, audio engineering, custom transitions, color grading, and dynamic text effects.',
-    longDescription: 'Establish editing systems to produce social shorts, marketing ads, and cinematic tutorials. Focus on visual assembly rules, background audio mixing, kinetic text overlay styles, and color profiles.',
+    description: 'Automate short-form video editing workflows. Learn timeline pacing, audio enhancements, and algorithmic clipping.',
+    longDescription: 'Establish editing systems to scale video output. Focus on visual assembly workflows, background audio design, automatic visual subtitle generation, and platform export rules.',
     syllabus: [
-      { week: 'Weeks 1-3', title: 'Timeline Assemblies', topics: ['Premiere layout configurations', 'Pacing guidelines & trims', 'Visual shortcuts mastery'] },
-      { week: 'Weeks 4-5', title: 'Subtitles & Graphics', topics: ['Text graphic designs', 'Kinetic zoom templates', 'Light and color visual effects'] },
-      { week: 'Weeks 6-8', title: 'Audio & Export profiles', topics: ['Vocal cleaning & dynamic adjustments', 'LUTs color grade schemes', 'Platform optimal exports profiles'] }
+      { week: 'Weeks 1-3', title: 'Scripting & Video Generators', topics: ['ChatGPT script templates configurations', 'Midjourney prompt guides for scene cuts', 'Auto-timeline cuts layouts'] },
+      { week: 'Weeks 4-5', title: 'Speech-to-Text & Subtitles', topics: ['CapCut AI caption configurations', 'Descript vocal editing workspaces', 'Custom transition effects plugins'] },
+      { week: 'Weeks 6-8', title: 'Atmospheric Audio & Multi-Exports', topics: ['AI background audio mixing rules', 'LUT color grading templates', 'Multi-platform aspect ratios templates'] }
     ],
     whatYouWillLearn: [
-      'Establish robust visual editing structures inside Premiere Pro timelines',
-      'Apply dynamic titles and custom-timed graphics',
-      'Mix multiple sound layers with clean vocal properties',
-      'Design color templates using professional LUT tables'
+      'Write optimized hooks and video scripts using ChatGPT templates',
+      'Create high-impact captions and subtitle animations automatically with AI',
+      'Assemble Premiere Pro timelines from script assets in minutes',
+      'Mix clear vocal tracks and configure automated platform export runs'
     ],
     prerequisites: ['Computer with a dedicated GPU', 'No prior editing knowledge required'],
-    tools: ['Premiere Pro', 'After Effects', 'Media Encoder'],
+    tools: ['Premiere Pro AI', 'Descript', 'CapCut AI', 'Midjourney'],
     color: 'text-amber-500',
     bgColor: 'bg-amber-500/10',
     borderColor: 'hover:border-amber-500/40'

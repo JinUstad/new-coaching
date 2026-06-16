@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import { Calendar, Code, Eye, Rocket, Server, TrendingUp } from 'lucide-react'
+import { Calendar, Code, Eye, Rocket, Server, TrendingUp, Sparkles } from 'lucide-react'
 
 const storyMilestones = [
   {
@@ -39,6 +39,13 @@ const storyMilestones = [
     title: 'DevforDevs Collective',
     description:
       'Scaled operations to build a collaborative network of designers, marketers, and developers. Delivering full-suite digital strategies globally.',
+  },
+  {
+    year: '2026',
+    icon: Sparkles,
+    title: 'AI Integration & Next-Gen Coaching',
+    description:
+      'Pioneered AI-driven development workflows and launched our elite AI-coaching syllabus, training devs in LLM integrations, autonomous agents, and AI design systems.',
   },
 ]
 

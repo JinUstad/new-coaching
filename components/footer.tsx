@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import { Briefcase, Code, Heart, Play, Mail, ArrowUp } from 'lucide-react'
+import { Briefcase, Code, Heart, Play, Mail, ArrowUp, Phone } from 'lucide-react'
 
 export function Footer() {
   const scrollToTop = () => {
@@ -93,7 +93,7 @@ export function Footer() {
               </ul>
             </motion.div>
 
-            {/* Social Links */}
+            {/* Contact & Experience */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -101,40 +101,28 @@ export function Footer() {
               viewport={{ once: true }}
               className="md:col-span-1"
             >
-              <h4 className="font-semibold text-foreground mb-4">Connect</h4>
-              <div className="flex gap-3">
-                <motion.a
-                  href="#"
-                  whileHover={{ scale: 1.2 }}
-                  className="w-10 h-10 rounded-lg bg-background border border-border hover:border-primary hover:bg-primary/10 flex items-center justify-center transition-colors group"
-                  title="LinkedIn"
+              <h4 className="font-semibold text-foreground mb-4">Contact</h4>
+              <div className="flex flex-col gap-3">
+                <a
+                  href="tel:+918512889586"
+                  className="text-muted-foreground hover:text-primary transition-colors text-sm flex items-center gap-2"
                 >
-                  <Briefcase className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors" />
-                </motion.a>
-                <motion.a
-                  href="#"
-                  whileHover={{ scale: 1.2 }}
-                  className="w-10 h-10 rounded-lg bg-background border border-border hover:border-primary hover:bg-primary/10 flex items-center justify-center transition-colors group"
-                  title="GitHub"
+                  <Phone className="w-4 h-4 text-primary shrink-0" />
+                  <span>+91 8512889586</span>
+                </a>
+                <a
+                  href="mailto:gulmohammad8512@gmail.com"
+                  className="text-muted-foreground hover:text-primary transition-colors text-sm flex items-center gap-2 break-all"
                 >
-                  <Code className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors" />
-                </motion.a>
-                <motion.a
-                  href="#"
-                  whileHover={{ scale: 1.2 }}
-                  className="w-10 h-10 rounded-lg bg-background border border-border hover:border-primary hover:bg-primary/10 flex items-center justify-center transition-colors group"
-                  title="Social"
-                >
-                  <Heart className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors" />
-                </motion.a>
-                <motion.a
-                  href="#"
-                  whileHover={{ scale: 1.2 }}
-                  className="w-10 h-10 rounded-lg bg-background border border-border hover:border-primary hover:bg-primary/10 flex items-center justify-center transition-colors group"
-                  title="Videos"
-                >
-                  <Play className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors" />
-                </motion.a>
+                  <Mail className="w-4 h-4 text-primary shrink-0" />
+                  <span>gulmohammad8512@gmail.com</span>
+                </a>
+                <div className="mt-2 text-xs text-muted-foreground border-t border-border/60 pt-3">
+                  <div className="font-semibold text-foreground mb-1">Our Experience</div>
+                  <p className="leading-relaxed">
+                    5+ years of delivering high-performance full-stack web applications, custom UI/UX design, and hands-on developer training.
+                  </p>
+                </div>
               </div>
             </motion.div>
           </div>

@@ -5,28 +5,32 @@ import { useInView } from 'react-intersection-observer'
 
 const teamMembers = [
   {
-    name: 'DevforDevs Founder',
-    role: 'Founder & Principal Engineer',
+    name: 'Gul Mohammad',
+    role: 'Web Developer & UI/UX Designer',
     avatar: '/avatar_gul.png',
-    bio: 'Full Stack expert with 5+ years building modern digital solutions. Specializes in Next.js, Node.js, and server architectures.',
+    bio: 'Specializes in crafting modern, high-converting, and accessible web experiences and responsive user interfaces.',
+    portfolio: 'https://gulmohammad0.netlify.app/',
   },
   {
-    name: 'Sarah Vance',
-    role: 'Senior UI/UX Architect',
+    name: 'Abdul Ahad',
+    role: 'MERN Full Stack & React Native Developer',
     avatar: '/avatar_sarah.png',
-    bio: 'Crafts high-converting, accessible user interfaces. Experienced in establishing Figma design systems for fast-growing startups.',
+    bio: 'Expert in building robust full-stack web applications and cross-platform mobile apps using React Native.',
+    portfolio: 'https://abdulahadportfolio.vercel.app',
   },
   {
-    name: 'Vikram Malhotra',
-    role: 'Lead SEO & Growth Strategist',
+    name: 'Rihan Jin Ustad',
+    role: 'Content Creator & Video Editor',
     avatar: '/avatar_vikram.png',
-    bio: 'Optimizes content strategies and technical setups to guarantee top page rankings on Google and boost organic conversions.',
+    bio: 'Creates engaging brand storytelling, content strategies, and high-converting video edits for modern digital platforms.',
+    portfolio: 'https://rihanjinustad.netlify.app/',
   },
   {
-    name: 'Emma Watson',
-    role: 'Lead Video & Motion Designer',
+    name: 'Sakin Idrisi',
+    role: 'Digital Marketing Expert',
     avatar: '/avatar_emma.png',
-    bio: 'Creates engaging brand storytelling and high-converting video advertisements for social channels and websites.',
+    bio: 'Focuses on SEO, growth strategies, and strategic marketing campaigns to optimize rankings and boost organic conversions.',
+    portfolio: '',
   },
 ]
 
@@ -78,37 +82,61 @@ export function AboutTeam() {
           animate={inView ? 'visible' : 'hidden'}
           className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"
         >
-          {teamMembers.map((member) => (
-            <motion.div
-              key={member.name}
-              variants={cardVariants}
-              whileHover={{ y: -10 }}
-              className="group relative rounded-2xl bg-card border border-border p-6 flex flex-col items-center text-center transition-all overflow-hidden hover:border-primary/50 hover:shadow-xl"
-            >
-              {/* Member Avatar (Image Graphic) */}
-              <div className="w-24 h-24 rounded-full mb-6 flex items-center justify-center overflow-hidden border-2 border-border shadow-md group-hover:scale-105 group-hover:border-primary/50 transition-all duration-300 relative bg-muted select-none">
-                <img
-                  src={member.avatar}
-                  alt={member.name}
-                  className="w-full h-full object-cover"
-                />
-              </div>
+          {teamMembers.map((member) => {
+            const cardContent = (
+              <>
+                {/* Member Avatar (Image Graphic) */}
+                <div className="w-24 h-24 rounded-full mb-6 flex items-center justify-center overflow-hidden border-2 border-border shadow-md group-hover:scale-105 group-hover:border-primary/50 transition-all duration-300 relative bg-muted select-none">
+                  <img
+                    src={member.avatar}
+                    alt={member.name}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
 
-              {/* Info */}
-              <h3 className="text-xl font-bold text-foreground mb-1 group-hover:text-primary transition-colors">
-                {member.name}
-              </h3>
-              <p className="text-sm font-semibold text-secondary mb-4">
-                {member.role}
-              </p>
-              <p className="text-muted-foreground text-sm leading-relaxed mb-6 flex-grow">
-                {member.bio}
-              </p>
+                {/* Info */}
+                <h3 className="text-xl font-bold text-foreground mb-1 group-hover:text-primary transition-colors">
+                  {member.name}
+                </h3>
+                <p className="text-sm font-semibold text-secondary mb-4">
+                  {member.role}
+                </p>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-6 flex-grow">
+                  {member.bio}
+                </p>
 
-              {/* Hover highlight background glow */}
-              <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full blur-2xl pointer-events-none group-hover:bg-primary/10 transition-colors" />
-            </motion.div>
-          ))}
+                {/* Hover highlight background glow */}
+                <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full blur-2xl pointer-events-none group-hover:bg-primary/10 transition-colors" />
+              </>
+            );
+
+            if (member.portfolio) {
+              return (
+                <motion.a
+                  key={member.name}
+                  href={member.portfolio}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  variants={cardVariants}
+                  whileHover={{ y: -10 }}
+                  className="group relative rounded-2xl bg-card border border-border p-6 flex flex-col items-center text-center transition-all overflow-hidden hover:border-primary/50 hover:shadow-xl cursor-pointer"
+                >
+                  {cardContent}
+                </motion.a>
+              );
+            }
+
+            return (
+              <motion.div
+                key={member.name}
+                variants={cardVariants}
+                whileHover={{ y: -10 }}
+                className="group relative rounded-2xl bg-card border border-border p-6 flex flex-col items-center text-center transition-all overflow-hidden hover:border-primary/50 hover:shadow-xl"
+              >
+                {cardContent}
+              </motion.div>
+            );
+          })}
         </motion.div>
       </div>
     </section>
