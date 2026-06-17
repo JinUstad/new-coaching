@@ -23,7 +23,17 @@ export function CoursesCatalog() {
     triggerOnce: true,
   })
 
-  const catalogIds = ['web-dev', 'figma-dev', 'frontend-dev', 'ui-ux', 'backend-dev', 'fullstack-dev', 'app-dev', 'video-editing']
+  const catalogIds = [
+    'web-dev',
+    'figma-dev',
+    'frontend-dev',
+    'ui-ux',
+    'backend-dev',
+    'fullstack-dev',
+    'app-dev',
+    'video-editing',
+    'prompt-engineering'
+  ]
   const catalogCourses = courses.filter((c) => catalogIds.includes(c.id))
 
   const containerVariants = {
@@ -36,14 +46,6 @@ export function CoursesCatalog() {
     },
   }
 
-  const cardVariants = {
-    hidden: { opacity: 0, y: 25 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.6, ease: 'easeOut' },
-    },
-  }
 
   return (
     <section ref={ref} className="py-16 px-4 sm:px-6 lg:px-8 bg-card border-y border-border">
@@ -71,7 +73,6 @@ export function CoursesCatalog() {
             return (
               <motion.div
                 key={course.id}
-                variants={cardVariants}
                 whileHover={{ y: -8 }}
                 className={`p-6 rounded-2xl bg-background border border-border flex flex-col justify-between transition-all hover:shadow-lg hover:border-primary/40 group`}
               >
@@ -95,7 +96,7 @@ export function CoursesCatalog() {
                   </p>
 
                   {/* Meta Badges */}
-                  <div className="grid grid-cols-2 gap-3 mb-5">
+                  <div className="grid grid-cols-1 min-[360px]:grid-cols-2 gap-2 sm:gap-3 mb-5">
                     <div className="flex items-center gap-1.5 text-xs text-muted-foreground bg-card border border-border p-2 rounded-lg">
                       <Clock className="w-3.5 h-3.5 text-primary shrink-0" />
                       <span>{course.duration}</span>

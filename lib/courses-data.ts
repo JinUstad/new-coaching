@@ -332,5 +332,36 @@ export const courses: Course[] = [
     color: 'text-amber-500',
     bgColor: 'bg-amber-500/10',
     borderColor: 'hover:border-amber-500/40'
+  },
+  {
+    id: 'prompt-engineering',
+    title: 'Prompt Engineering & Generative AI Special Class',
+    category: 'AI Special',
+    iconName: 'Cpu',
+    level: 'All Levels',
+    duration: '4 Weeks',
+    students: 'Live & Enrolling',
+    description: 'Master the art of prompt design: Few-shot learning, system prompt architecture, prompt evaluation, caching, and building AI agents.',
+    longDescription: 'This specialized 4-week sprint is designed to turn you into a professional Prompt Engineer. You will learn the exact techniques used to program LLMs, manage token costs, design robust system prompts, build tool-calling pipelines, and evaluate prompt stability under load.',
+    syllabus: [
+      { week: 'Week 1', title: 'Foundations of LLM Communication', topics: ['Tokenizer mechanics & context windows', 'Few-shot and zero-shot prompting rules', 'System vs User vs Assistant role splits'] },
+      { week: 'Week 2', title: 'Advanced Prompt Architectures', topics: ['Chain of Thought (CoT) & Tree of Thoughts', 'Self-consistency & prompt output schema validation', 'Formatting prompts via XML/JSON markers'] },
+      { week: 'Week 3', title: 'System Prompt Engineering & Caching', topics: ['Building agentic system prompts', 'Handling prompt injection & jailbreak risks', 'Prompt caching architectures & cost optimization'] },
+      { week: 'Week 4', title: 'Evaluation & Prompt Pipelines', topics: ['Automated prompt stability tests', 'Retrieval-Augmented Generation (RAG) context injects', 'Integrating prompt templates in Node/Python runtimes'] }
+    ],
+    whatYouWillLearn: [
+      'Write highly deterministic prompts for production AI applications',
+      'Optimize API usage costs using prompt caching and context pruning',
+      'Secure AI applications against prompt injection and security exploits',
+      'Design advanced agent logic with XML tags and structured JSON outputs'
+    ],
+    prerequisites: ['Basic computer skills', 'No coding experience needed, but JavaScript/Python is helpful'],
+    tools: ['OpenAI Playground', 'Claude Workbench', 'LangChain', 'Promptfoo', 'v0.dev'],
+    color: 'text-amber-500',
+    bgColor: 'bg-amber-500/10',
+    borderColor: 'hover:border-amber-500/40 group-hover:border-amber-500/50',
+    accentColor: 'text-amber-500',
+    colorFrom: 'from-amber-500/10',
+    colorTo: 'to-orange-500/10'
   }
 ]

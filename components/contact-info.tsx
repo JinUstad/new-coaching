@@ -154,7 +154,7 @@ export function ContactInfo() {
 
             {/* Email Contact */}
             <motion.a
-              href="mailto:gulmohammad8512@gmail.com"
+              href="mailto:devfordevs001@gmail.com"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
               className="block p-6 rounded-2xl bg-background border border-border hover:border-primary/50 transition-colors group"
@@ -165,7 +165,7 @@ export function ContactInfo() {
                 </div>
                 <div>
                   <h4 className="font-bold text-lg text-foreground mb-0.5">Direct Email Desk</h4>
-                  <p className="text-muted-foreground text-sm">gulmohammad8512@gmail.com — reply within 12 hours</p>
+                  <p className="text-muted-foreground text-sm">devfordevs001@gmail.com — reply within 12 hours</p>
                 </div>
               </div>
             </motion.a>

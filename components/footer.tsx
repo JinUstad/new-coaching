@@ -111,11 +111,11 @@ export function Footer() {
                   <span>+91 8512889586</span>
                 </a>
                 <a
-                  href="mailto:gulmohammad8512@gmail.com"
+                  href="mailto:devfordevs001@gmail.com"
                   className="text-muted-foreground hover:text-primary transition-colors text-sm flex items-center gap-2 break-all"
                 >
                   <Mail className="w-4 h-4 text-primary shrink-0" />
-                  <span>gulmohammad8512@gmail.com</span>
+                  <span>devfordevs001@gmail.com</span>
                 </a>
                 <div className="mt-2 text-xs text-muted-foreground border-t border-border/60 pt-3">
                   <div className="font-semibold text-foreground mb-1">Our Experience</div>

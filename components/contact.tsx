@@ -227,7 +227,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground">Email</h4>
-                  <p className="text-muted-foreground">gulmohammad8512@gmail.com</p>
+                  <p className="text-muted-foreground">devfordevs001@gmail.com</p>
                 </div>
               </div>
             </motion.div>

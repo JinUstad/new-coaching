@@ -113,7 +113,9 @@ export function CoursesSchedule() {
                 key={index}
                 variants={cardVariants}
                 whileHover={{ y: -8 }}
-                className={`group relative rounded-2xl bg-card border border-border p-6 flex flex-col justify-between transition-all hover:shadow-xl hover:border-primary/40`}
+                className={`group relative rounded-2xl bg-card border border-border p-6 flex flex-col justify-between transition-all hover:shadow-xl hover:border-primary/40 ${
+                  index === 2 ? 'md:col-span-2 lg:col-span-1' : ''
+                }`}
               >
                 <div>
                   {/* Icon & Tag */}

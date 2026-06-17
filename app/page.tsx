@@ -5,6 +5,7 @@ import { Services } from '@/components/services'
 import { Statistics } from '@/components/statistics'
 import { WhyChooseMe } from '@/components/why-choose-me'
 import { Courses } from '@/components/courses'
+import { PromptSpecialClass } from '@/components/prompt-special-class'
 import { LatestBlogs } from '@/components/latest-blogs'
 import { Process } from '@/components/process'
 import { Footer } from '@/components/footer'
@@ -19,9 +20,11 @@ export default function Home() {
       <Statistics />
       <WhyChooseMe />
       <Courses />
+      <PromptSpecialClass />
       <LatestBlogs />
       <Process />
       <Footer />
     </main>
   )
 }
+
