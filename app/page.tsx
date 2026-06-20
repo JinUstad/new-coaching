@@ -16,11 +16,11 @@ export default function Home() {
       <Navbar />
       <Hero />
       <About />
+      <PromptSpecialClass />
       <Services />
       <Statistics />
       <WhyChooseMe />
       <Courses />
-      <PromptSpecialClass />
       <LatestBlogs />
       <Process />
       <Footer />

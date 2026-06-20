@@ -14,7 +14,7 @@ const teamMembers = [
   {
     name: 'Abdul Ahad',
     role: 'MERN Full Stack & React Native Developer',
-    avatar: '/avatar_sarah.png',
+    avatar: '/avatar_ahad.png',
     bio: 'Expert in building robust full-stack web applications and cross-platform mobile apps using React Native.',
     portfolio: 'https://abdulahadportfolio.vercel.app',
   },
@@ -24,13 +24,6 @@ const teamMembers = [
     avatar: '/avatar_vikram.png',
     bio: 'Creates engaging brand storytelling, content strategies, and high-converting video edits for modern digital platforms.',
     portfolio: 'https://rihanjinustad.netlify.app/',
-  },
-  {
-    name: 'Sakin Idrisi',
-    role: 'Digital Marketing Expert',
-    avatar: '/avatar_emma.png',
-    bio: 'Focuses on SEO, growth strategies, and strategic marketing campaigns to optimize rankings and boost organic conversions.',
-    portfolio: '',
   },
 ]
 
@@ -80,7 +73,7 @@ export function AboutTeam() {
           variants={containerVariants}
           initial="hidden"
           animate={inView ? 'visible' : 'hidden'}
-          className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"
+          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
           {teamMembers.map((member) => {
             const cardContent = (
