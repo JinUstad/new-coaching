@@ -18,6 +18,7 @@ export interface Course {
   accentColor: string
   colorFrom?: string
   colorTo?: string
+  roadmapImage?: string
 }
 
 export const courses: Course[] = [
@@ -142,7 +143,8 @@ export const courses: Course[] = [
     tools: ['Cursor IDE', 'v0.dev', 'GitHub Copilot', 'HTML5', 'CSS3', 'Modern JS'],
     color: 'text-blue-500',
     bgColor: 'bg-blue-500/10',
-    borderColor: 'hover:border-blue-500/40'
+    borderColor: 'hover:border-blue-500/40',
+    roadmapImage: '/web development.png'
   },
   {
     id: 'figma-dev',
@@ -196,7 +198,8 @@ export const courses: Course[] = [
     tools: ['React 19', 'Next.js 16', 'v0.dev', 'Cursor', 'Tailwind CSS v4', 'Framer Motion'],
     color: 'text-purple-500',
     bgColor: 'bg-purple-500/10',
-    borderColor: 'hover:border-purple-500/40'
+    borderColor: 'hover:border-purple-500/40',
+    roadmapImage: '/front-end .png'
   },
   {
     id: 'ui-ux',
@@ -250,7 +253,8 @@ export const courses: Course[] = [
     tools: ['Node.js', 'Express', 'Pinecone DB', 'LangChain', 'OpenAI API', 'Docker'],
     color: 'text-indigo-500',
     bgColor: 'bg-indigo-500/10',
-    borderColor: 'hover:border-indigo-500/40'
+    borderColor: 'hover:border-indigo-500/40',
+    roadmapImage: '/back end .png'
   },
   {
     id: 'fullstack-dev',

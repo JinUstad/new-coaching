@@ -159,14 +159,28 @@ export default function CourseDetailsClient({ courseId }: { courseId: string }) 
             {/* Left Content column (Overview, Learnings, Syllabus) */}
             <div className="lg:col-span-8 space-y-12">
               
-              {/* Overview */}
-              <div className="space-y-4">
-                <h2 className="text-2xl font-bold text-foreground">Program Overview</h2>
-                <div className="w-16 h-1 bg-primary rounded-full" />
-                <p className="text-muted-foreground leading-relaxed text-base sm:text-lg">
-                  {course.longDescription}
-                </p>
-              </div>
+              {course.roadmapImage ? (
+                <div className="space-y-4">
+                  <h2 className="text-2xl font-bold text-foreground">Course Roadmap</h2>
+                  <div className="w-16 h-1 bg-primary rounded-full mb-6" />
+                  <div className="rounded-2xl overflow-hidden border border-border bg-card shadow-lg p-2 sm:p-4">
+                    <img 
+                      src={course.roadmapImage} 
+                      alt={`${course.title} Roadmap`} 
+                      className="w-full h-auto rounded-xl" 
+                    />
+                  </div>
+                </div>
+              ) : (
+                <>
+                  {/* Overview */}
+                  <div className="space-y-4">
+                    <h2 className="text-2xl font-bold text-foreground">Program Overview</h2>
+                    <div className="w-16 h-1 bg-primary rounded-full" />
+                    <p className="text-muted-foreground leading-relaxed text-base sm:text-lg">
+                      {course.longDescription}
+                    </p>
+                  </div>
 
               {/* What You'll Learn */}
               <div className="space-y-6">
@@ -265,6 +279,8 @@ export default function CourseDetailsClient({ courseId }: { courseId: string }) 
                   })}
                 </div>
               </div>
+              </>
+              )}
             </div>
 
             {/* Right Column (Prerequisites, Tools, Form) */}
